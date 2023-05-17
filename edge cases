@@ -1,0 +1,42 @@
+For Inputs
+1. If lat and lng values are entered in textbox, the object should be formed well.
+
+
+Working inputs:
+1. The GeoJson in data.json file.
+
+2. 
+{
+     "latitude": -32.202924,
+     "longitude": -64.404945
+}
+
+3.
+{
+     "lat": -32.202924,
+     "lng": -64.404945
+}
+
+4.
+[
+    {
+        "lng": -149.8072,
+        "lat": 62.6916
+    },
+    {
+        "lng": -170.0567,
+        "lat":52.4716
+    }
+]
+
+5. 
+[
+    {
+        "longitude": -149.8072,
+        "latitude": 62.6916
+    },
+    {
+        "longitude": -170.0567,
+        "latitude":52.4716
+    }
+]

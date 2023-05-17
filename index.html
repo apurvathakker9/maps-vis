@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="select-map">
+        Base Map:
+        <select id="select-base-map">
+            <option value="google-map">Google Map</option>
+            <option value="mapbox">Mapbox</option>
+            <!-- <option value="apple-map">Apple Map</option> -->
+            <option value="here-map">Here Map</option>
+        </select>
+    </div>
+    <div class="container">
+        <div class="input-area">
+            <select name="select-input-type-name" id="select-input-type">
+                <option value="lat-lng">List of Lat Lng Values</option>
+                <option value="geojson">GeoJson</option>
+                <!-- <option value="addresses">List of Addresses</option> -->
+            </select>
+            <textarea id="textarea-lat-lng" rows="9"></textarea>
+            <button id="update-map">Update Map</button>
+        </div>
+        <div id="map-area">
+            <div id="map"></div>
+        </div>
+    </div>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Google Maps Scripts -->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMozUJfBkZP2sIHDeDe66GPeebZNRR2h0&libraries=drawing"
+  ></script>
+  <script type="text/javascript" src="./scripts/google-map.js"></script>
+
+
+    <!-- Mapbox Scripts -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <script type='text/javascript' src="./scripts/mapbox-map.js"></script>
+
+    <!-- Here Maps -->
+    <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script type="text/javascript" src="./scripts/here-map.js"></script>
+
+
+    <!-- Apple Maps -->
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
+    <script src="./scripts/apple-map.js"></script>
+
+    <!-- Custom Script file -->
+    <script type="text/javascript" src="./scripts/script.js"></script>
+</body>
+</html>
