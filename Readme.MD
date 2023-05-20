@@ -1,5 +1,7 @@
 # Maps Visualization
 
+### [Test Here](https://release.d2xg091oe0ozel.amplifyapp.com/)
+
 This interface provides three types of maps:
 
 - Google Maps
@@ -7,7 +9,7 @@ This interface provides three types of maps:
 - Here Maps
 
 ## Purpose
-This small application aims to assist users in plotting points across different map bases. The problem with using different map bases, is that if you want to switch between them, the data added for a map will be lost. This application takes care of the plot state and regereates bases when the value of map is changed form the dropdown. It was initially developed as a project draft with the intention of creating a comprehensive solution for managers to make location-based decisions and perform various operations, such as clustering for operations.
+This small application aims to assist users in plotting points **across different map bases**. The problem with using different map bases, is that if you want to switch between them, the data added for a map will be lost. Moreover, every map base might have a different way of implementing certain features. This application takes care of the plot state, regereates bases when the value of map is **changed form the dropdown** and has common function names for similar features. It was initially developed as a project draft with the intention of creating a comprehensive solution for managers to make location-based decisions and perform various operations, such as clustering for operations.
 
 ## Technical Concept
 This web application is built using JavaScript and utilizes Map APIs from Google, Mapbox, and Here Maps to plot points on different map interfaces. When a user enters data in the text area, which should be in valid JSON format, the text is parsed accordingly, and the points are plotted on the selected map from the dropdown menu. As more data is added in the text box, it gets appended to the previous list, allowing users to continuously add data to be plotted. The plots are represented using custom SVG markers.
